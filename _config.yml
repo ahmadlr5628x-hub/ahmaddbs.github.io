@@ -1,1 +1,60 @@
+# ============================================
+# _config.yml  —  Main Site Configuration
+# ============================================
+
+# --- Site Info (EDIT THESE) ---
+title: "Your Name"
+description: "Developer · Writer · Creator. I document my journey week by week."
+url: "https://yourusername.github.io"   # your GitHub Pages URL
+baseurl: ""                              # leave empty for username.github.io
+
+# --- Author Info ---
+author:
+  name:     "Your Name"
+  email:    "you@email.com"
+  github:   "yourusername"
+  linkedin: "yourprofile"
+  bio:      "I am a developer learning in public. Every week I share what I build and learn."
+
+# --- Theme ---
+# Using Minima (default Jekyll theme, works with GitHub Pages)
+theme: minima
+
+minima:
+  skin: dark   # options: classic, dark, solarized, solarized-dark
+
+# --- Navigation (shown in header) ---
+header_pages:
+  - index.md
+  - about.md
+  - blog.md
+  - contact.md
+
+# --- Blog / Posts Settings ---
+show_excerpts: true
+permalink: /blog/:year/:month/:day/:title/
+
+# --- Plugins (all supported by GitHub Pages) ---
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-paginate
+
+# --- Pagination ---
+paginate: 5
+paginate_path: "/blog/page:num/"
+
+# --- Social Links (used by minima theme) ---
+minima:
+  social_links:
+    - { platform: github,   user_url: "https://github.com/yourusername" }
+    - { platform: linkedin, user_url: "https://linkedin.com/in/yourprofile" }
+
+# --- Exclude from build ---
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - node_modules
 
